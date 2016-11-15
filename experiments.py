@@ -111,7 +111,7 @@ class Quezon(PlaylistFactory):
             = [ins.strip() for ins in
                self.config['wordlist-memory-instructions'].values()]
 
-        self.wordlists = self.config['test word lists']
+        self.wordlists = self.config['wordlists']
 
         self.get_slides()
         self.parse_instructions()
