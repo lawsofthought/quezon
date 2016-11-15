@@ -121,9 +121,9 @@ class Quezon(PlaylistFactory):
 
         slide = WordlistRecognitionMemoryTest.new(
                         name=name,
-                        inwords=memorandum['inwords'].split(','),
-                        outwords=memorandum['outwords'].split(','),
-                        wordlist=memorandum['wordlist'].split(','),
+                        inwords=memorandum['inwords'],
+                        outwords=memorandum['outwords'],
+                        wordlist=memorandum['wordlist'],
                         start_wordlist_msg=self.start_msg['start_wordlist_msg'],
                         start_memorytest_msg=self.start_msg['start_memorytest_msg'],
                         test_times=self.wordlist_recognition_test_times,
@@ -138,7 +138,7 @@ class Quezon(PlaylistFactory):
         slide = WordlistRecallMemoryTest.new(
                     name=name,
                     option_length=self.word_recall_parameters['option_length'],
-                    wordlist=memorandum['wordlist'].split(','),
+                    wordlist=memorandum['wordlist'],
                     start_wordlist_msg=self.start_msg['start_wordlist_msg'],
                     start_memorytest_msg=self.start_msg['start_memorytest_msg'],
                     wordlist_display_times=self.wordlist_display_times,
